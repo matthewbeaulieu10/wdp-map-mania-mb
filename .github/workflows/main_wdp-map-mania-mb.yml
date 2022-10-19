@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'wdp-map-mania-mb'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AA0D5B4A8D3A49E9AA56400D31F6610E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_985B582AE905485991A6CCC5ABBA8473 }}
           package: .

@@ -7,28 +7,26 @@ function begin() {
 }
 
 async function getMarkers() {
-    //try{
+    try{
         const response = await fetch("/places")
         const data = await response.json()
         makeMarkers(data)
-    // } catch(e) {
-    //     console.log("dis crap not working")
-    // }
+    } catch(e) {
+        console.log("dis crap not working")
+    }
     
 }
 
-//TYPECASTING VARIABLES
+//TYPECASTING VARIABLES -- THIS IS WHERE I LEFT OFF
 function makeMarkers(data) {
     var places = Object.values(data.places)
     for (let i = 0; i < places.length; i++) {
-
         var location = places[i].location
         var lat = Number(places[i].lat)
         var lng = Number(places[i].lng)
         var name = places[i].name
         new google.maps.Marker({position: {lat:lat,lng:lng}, map:actualMap, title: location})
-    }
-    
+    } 
 }
 
 var actualMap;
@@ -49,6 +47,6 @@ function initMap() {
             closeEnough = true;
         }
 
-        console.log("inBounds:"+closeEnough+" zoomLevel:"+zoom)
+        console.log("closeEnough:"+closeEnough+" zoom:"+zoom)
     })
 }

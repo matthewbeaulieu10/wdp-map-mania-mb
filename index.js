@@ -28,15 +28,9 @@ var favPlaces = {
 }
 
 app.get('/places', (request, response) => {
-	console.log('Calling favPlaces on the Node.js server.')
+	console.log('Calling places on the Node.js server.')
 	response.type('application/json')
 	response.send(JSON.stringify(favPlaces, null, 4))
-})
-
-app.get('/about', (request, response) => {
-	console.log('Calling "/about" on the Node.js server.')
-	response.type('text/plain')
-	response.send('About Node.js on Azure Template.')
 })
 
 // Custom 404 page.

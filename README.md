@@ -2,4 +2,6 @@
 
 Matthew Beaulieu -- WDP Map Mania - matthewtbeaulieu@lewisu.edu
 
-go to -- URL NOT CREATED YET -- to run it
+go to -- https://wdp-map-mania-mb.azurewebsites.net -- to run it
+
+** another credit to Max Lewis because he helped me with hosting JSON on the server **

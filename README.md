@@ -6,4 +6,4 @@ go to -- https://wdp-map-mania-mb.azurewebsites.net -- to run it
 
 ** another credit to Max Lewis because he helped me with hosting JSON on the server **
 
-IDEA FOR V2 --> Have a 'spots left in bounds' counter...
+IDEA FOR V2 --> Have a 'spots left in bounds' counter... and a label that shows their zoom level!
